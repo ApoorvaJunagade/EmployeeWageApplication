@@ -24,7 +24,7 @@ class EmployeeWage{
 		return hrs;
 	}
 
-	public static void DailyWage(){
+	public static int DailyWage(){
 		int Hr=isPartTime();
 		int wagePerHr=20;
 		if(EmployeeAttendance()==1){
@@ -33,12 +33,20 @@ class EmployeeWage{
 			else
 				System.out.println("daily wage for full time="+Hr*wagePerHr);
 		}
-		
+		int total = Hr*wagePerHr;
+		return total;	
 	}
 	public static void main (String[] args){
 		System.out.println("welcome to employee wage calculation program");
 		EmployeeWage empWage = new EmployeeWage();
 		//empWage.EmployeeAttendance();
-		empWage.DailyWage();
+		int wages=0;
+		int i=0;
+		for(i=0; i<20; i++)
+		{
+			 wages=wages+empWage.DailyWage();
+			
+		}
+		System.out.println("total wages="+ wages);
 	}
 }
