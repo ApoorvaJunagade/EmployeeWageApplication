@@ -7,7 +7,7 @@ do
          echo $f1
 	
 done
-	 java -cp ./classes/ com.EmployeewWage.$1
+	 java -cp ./classes/ com/Employeewage/controller/$1
 
 
 

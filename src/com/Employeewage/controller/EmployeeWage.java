@@ -1,6 +1,9 @@
-class EmployeeWage{
+package com.Employeewage.controller;
+import com.Employeewage.model.Employee;
+
+public class EmployeeWage{
         
-	public static double random(){
+	/*public static double random(){
 		double status=Math.floor(Math.random()*10)%2;
 		return status;
 	}
@@ -35,11 +38,14 @@ class EmployeeWage{
 		}
 		int total = Hr*wagePerHr;
 		return total;	
-	}
+	}*/
 	public static void main (String[] args){
 		System.out.println("welcome to employee wage calculation program");
-		EmployeeWage empWage = new EmployeeWage();
-		//empWage.EmployeeAttendance();
+		//EmployeeWage empWage = new EmployeeWage();
+		Employee emp = new Employee();
+		emp.setName("john");
+		System.out.println(emp.getName());
+		/*empWage.EmployeeAttendance();
 		int wages=0;
 		int i=0;
 		for(i=0; i<20; i++)
@@ -47,6 +53,6 @@ class EmployeeWage{
 			 wages=wages+empWage.DailyWage();
 			
 		}
-		System.out.println("total wages="+ wages);
+		System.out.println("total wages="+ wages);*/
 	}
 }
